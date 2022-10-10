@@ -3,11 +3,10 @@
 mkdir /tmp/celar_install
 cd /tmp/celar_install
 
-$URL="https://api.github.com/repos/bipo38/celar/releases/latest"
-
-wget $URL
-cp ./celar ~/.local/bin
-echo "Install done! Restart terminal to apply changes..."
+wget https://github.com/bipo38/celar/releases/latest/download/celar
+cp celar /bin
+chmod 505 /bin/celar
+echo "Install done! Restart terminal if changes don't apply..."
 
 cd ~
 rm -rf /tmp/celar_install
